@@ -32,44 +32,27 @@ class Phonebook extends Component {
       <div>
         <h2>Phonebook</h2>
         <form className={styles.form} onSubmit={this.handleSubmit}>
-          <label
-            style={{
-              margin: "10px",
-            }}
-          >
+          <label className={styles.label}>
             Name
             <input
-              style={{
-                marginLeft: "25px",
-              }}
+              className={styles.input1}
               name={"name"}
               onChange={this.handleAdd}
               value={this.state.name}
               type="text"
             />
           </label>
-          <label
-            style={{
-              margin: "10px",
-            }}
-          >
+          <label className={styles.label}>
             Number
             <input
-              style={{
-                marginLeft: "10px",
-              }}
+              className={styles.input2}
               name={"number"}
               onChange={this.handleAdd}
               value={this.state.number}
               type="text"
             />
           </label>
-          <button
-            style={{
-              margin: "10px",
-            }}
-            type="submit"
-          >
+          <button className={styles.input1} type="submit">
             Add contact
           </button>
         </form>

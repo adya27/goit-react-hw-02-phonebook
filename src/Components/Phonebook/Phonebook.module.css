@@ -7,3 +7,15 @@
   flex-direction: column;
   margin-right: auto;
 }
+
+.label {
+  margin: 10px;
+}
+
+.input1 {
+  margin-left: 25px;
+}
+
+.input2 {
+  margin-left: 10px;
+}
