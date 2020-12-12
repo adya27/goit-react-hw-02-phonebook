@@ -1,4 +1,5 @@
 import styles from "./DeleteBtn.module.css";
+import PropTypes from "prop-types";
 
 function DeleteBtn(props) {
   return (
@@ -10,6 +11,11 @@ function DeleteBtn(props) {
       Delete
     </button>
   );
+}
+
+
+DeleteBtn.propTypes = {
+  onClickDeleteBtn: PropTypes.func.isRequired
 }
 
 export default DeleteBtn;

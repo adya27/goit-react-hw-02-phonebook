@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import Contact from "./Contact";
 
 function ContactList(props) {
@@ -19,6 +21,12 @@ function ContactList(props) {
       </ul>
     </div>
   );
+}
+
+
+ContactList.propTypes = {
+  contacts: PropTypes.array.isRequired,
+  onDeleteBtnClick: PropTypes.func.isRequired
 }
 
 export default ContactList;
